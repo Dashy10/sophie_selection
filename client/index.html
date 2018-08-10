@@ -287,25 +287,27 @@
 		<div class="container">
 			<span class="icon"><img src="images/ico5.png" alt="icon"></span>
 			<h2 class="section-title">Contact Us</h2>
-			<div class="container-sm">
-				<div class="row">
-					<div class="col-1-2">
-						<p class="body-text">Name:</p>
-						<input type="text" placeholder="Enter Your Name">
+			<form action="/contact" id="contact-form" method="post" role="form">
+				<div class="container-sm">
+					<div class="row">
+						<div class="col-1-2">
+							<p class="body-text">Name:</p>
+							<input id="name" name="name" type="text" placeholder="Enter Your Name">
+						</div>
+						<div class="col-1-2">
+							<p class="body-text">Email:</p>
+							<input id="email" name="email" type="text" placeholder="Enter Your Email">
+						</div>
 					</div>
-					<div class="col-1-2">
-						<p class="body-text">Email:</p>
-						<input type="text" placeholder="Enter Your Email">
+					<div class="row">
+						<div class="col-1">
+							<p class="body-text">Message:</p>
+							<textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+							<input type="submit" value="Send Message">
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-1">
-						<p class="body-text">Message:</p>
-						<textarea placeholder="Enter Your Message"></textarea>
-						<input type="submit" value="Send Message">
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 
